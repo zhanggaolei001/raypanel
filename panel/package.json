@@ -1,0 +1,26 @@
+{
+  "name": "get-jd-cookie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Echowxsy",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "download": "^8.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "got": "^11.5.1",
+    "http-proxy-middleware": "^2.0.0",
+    "http-server": "^0.12.3",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "tough-cookie": "^4.0.0"
+  }
+}

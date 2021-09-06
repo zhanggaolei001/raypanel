@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>登陆</title>
+  <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+  <script type="text/javascript" src="./jd_cookie.js"></script>
+  <style type="text/css">
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      align-items: center;
+      color: #2906f3;
+    }
+
+    .btn {
+      color: #444444;
+      background: #f3f3f3;
+      border: 1px #dadada solid;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-weight: bold;
+      font-size: 24pt;
+      outline: none;
+    }
+
+    .btn:hover {
+      border: 1px #c6c6c6 solid;
+      box-shadow: 1px 1px 1px #eaeaea;
+      color: #333333;
+      background: #f7f7f7;
+    }
+
+    .btn:active {
+      box-shadow: inset 1px 1px 1px #dfdfdf;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      /*height: 100%;*/
+      /*min-height: 100vh;*/
+      width: 100vw;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    /* Blue button as seen on translate.google.com*/
+    .container .btn {
+      margin: 0 auto;
+      color: white;
+      background: #4c8ffb;
+      border: 1px #3079ed solid;
+      border-radius: 5px;
+      box-shadow: inset 0 1px 0 #80b0fb;
+    }
+
+    .container .btn:hover {
+      border: 1px #2f5bb7 solid;
+      box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #5a94f1;
+      background: #3f83f1;
+    }
+
+    .container .btn:active {
+      box-shadow: inset 0 2px 5px #2370fe;
+    }
+
+    .container .dec {
+      margin-top: 100px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: red;
+    }
+
+    #qrcontainer .qframe {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: #6d8a88 1px solid;
+      -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    #qrcontainer .qframe #refresh_qrcode {
+      width: 256px;
+      height: 256px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      left: 1rem;
+      top: 1rem;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #qrcontainer .qframe #refresh_qrcode.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #qrcontainer .qframe #refresh_qrcode h3 {
+      font-weight: normal;
+    }
+
+    #qrcontainer .qframe #refresh_qrcode .refresh {
+      display: block;
+      background: #e4393c;
+      width: 80px;
+      height: 30px;
+      margin: 0 auto;
+      line-height: 30px;
+      opacity: 1;
+      z-index: 19;
+      color: #fbfbfb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #qrcontainer .qframe .info {
+      padding: 1rem 0 0 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      .container .dec {
+        margin-top: 50px;
+      }
+
+      .container .btn {
+        /*margin-bottom: 50px;*/
+      }
+    }
+
+    #msg {
+      display: block;
+      width: 90%;
+      height: 30px;
+      border-width: 2px;
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+
+    .qr {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: fixed;
+      inset: 0px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 1001;
+      width: 100%;
+      min-width: 100vw;
+    }
+
+    .qrcontainer {
+      position: relative;
+      width: 256px;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid rgb(109, 138, 136);
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgb(0 0 0 / 20%) 0px 0px 7px 3px;
+      box-sizing: content-box;
+    }
+
+    #tip {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 256px;
+      height: 256px;
+      color: rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .des {
+      word-break: break-word;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>请在PC上使用JDLoginTool自助登陆</h1> 
+  </div>
+  <script>
+    getCount(); 
+      // 后端服务接口
+
+  </script>
+
+</body>
+
+</html>
